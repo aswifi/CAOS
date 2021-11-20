@@ -42,7 +42,6 @@ Download_caddy(){
 	cd "${file}"
 	PID=$(ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy_install" |awk '{print $2}')
 	[[ ! -z ${PID} ]] && kill -9 ${PID}
-	[[ -e "caddy_linux*.tar.gz" ]] && rm -rf "caddy_linux*.tar.gz"
 	
 	if [[ ! -z ${extension} ]]; then
 		extension_all="?plugins=${extension}&license=personal"
