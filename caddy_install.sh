@@ -93,7 +93,7 @@ install_caddy(){
  日志文件：cat /tmp/caddy.log
  使用说明：service caddy start | stop | restart | status
  或者使用：/etc/init.d/caddy start | stop | restart | status
- 卸载命令：bash caddy_install.sh uninstall
+ 卸载命令：bash caddy_install_final.sh uninstall
  ${Info_font_prefix}[信息]${Font_suffix} Caddy 安装完成！" && echo
 }
 uninstall_caddy(){
