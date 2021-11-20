@@ -10,6 +10,8 @@ Caddy安装位置：`/usr/local/caddy/`
 使用说明：`service caddy start | stop | restart | status`
 或者使用：`/etc/init.d/caddy start | stop | restart | status`
 
-卸载命令：`bash caddy_install.sh uninstall`
+安装命令：`bash caddy_install_final.sh install`
+
+卸载命令：`bash caddy_install_final.sh uninstall`
 
 Thanks for Toyo&Teddysun&Moerats
