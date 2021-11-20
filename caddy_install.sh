@@ -113,7 +113,7 @@ uninstall_caddy(){
 		rm -rf ${caddy_file}
 		rm -rf ${caddy_conf_file}
 		rm -rf /etc/init.d/caddy
-		[[ ! -e ${caddy_file} ]] && echo && echo -e "${Info_font_prefix}[信息]${Font_suffix} Caddy 卸载完成 !" && echo && exit 1
+		[[ ! -e ${caddy_file} ]] && echo && echo -e "${Info_font_prefix}[信息]${Font_suffix} Caddy 卸载完成 !" && rm -rf caddy_install_final.sh && echo && exit 1
 		echo && echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy 卸载失败 !" && echo
 	else
 		echo && echo "卸载已取消..." && echo
